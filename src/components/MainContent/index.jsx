@@ -37,7 +37,6 @@ function MainContent() {
         },
     ]
 
-
     return (
         <>
             <Hero />

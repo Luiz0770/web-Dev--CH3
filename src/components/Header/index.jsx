@@ -2,23 +2,23 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 
 function Header() {
-    return ( 
+    return (
         <>
             <header>
                 <nav className='cabecalho'>
                     <li className='cabecalho-item'>
-                        Home
+                        <Link to='/'>Home</Link>
                     </li>
                     <li className='cabecalho-item'>
-                        Sobre
+                        <Link to='/sobre'>Sobre</Link>
                     </li>
                     <li className='cabecalho-item'>
-                        Contato
+                        <Link to='/contato'>Contato</Link>
                     </li>
                 </nav>
             </header>
         </>
-     );
+    );
 }
 
 export default Header;
