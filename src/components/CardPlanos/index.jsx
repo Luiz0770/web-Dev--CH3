@@ -1,8 +1,8 @@
 import './CardPlanos.css'
 
-function CardPlanos({ nome, usuarios, opcoes, textButton, corTopo }) {
+function CardPlanos({ nome, selecao, textButton, corTopo, corBotao, corTxtBotao, imagem }) {
 
-    console.log(opcoes)
+    console.log(selecao)
 
     return (
         <>
@@ -12,13 +12,16 @@ function CardPlanos({ nome, usuarios, opcoes, textButton, corTopo }) {
                 </div>
                 <div className='card-planos-content'>
                     <div className='card-plano-select'>
-                        <label htmlFor="usuario">{usuarios} Usuario</label>
-                        <select name="usuario" id="usuario">
-                            <option value="10">10 vídeos</option>
-                        </select>
-
+                        {selecao != '' ? selecao.map((selecionado, index) => (
+                            <>
+                              <label htmlFor="usuario">{selecionado.label} Usuario</label>
+                                <select name="usuario" id="usuario">
+                                    <option key={index} value={selecionado.opcao}>{selecionado.opcao}</option>
+                                </select>
+                            </>
+                        )) : <img src={imagem} alt='Imagem de um celular corporativo'></img>}
                     </div>
-                    <button>{textButton}</button>
+                    <button style={{backgroundColor: corBotao, color: corTxtBotao}}>{textButton}</button>
                 </div>
             </div>
         </>
