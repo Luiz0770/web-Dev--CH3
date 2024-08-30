@@ -1,0 +1,32 @@
+.card-itens {
+    margin-top: 5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start ;
+    justify-content: space-between;
+}
+
+.card-header img {
+    margin-top: 1rem;
+}
+
+.card-titulo {
+    font-size: 3.2rem;
+    margin-bottom: .5rem;
+}
+
+.card-descricao {
+    width: 90%;
+    font-size: 1.8rem;
+}
+
+.card-indice {
+    color: var(--color-light-700);
+    font-size: 6rem;
+    margin: 1rem 0;
+}
