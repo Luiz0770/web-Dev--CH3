@@ -1,0 +1,19 @@
+.txtContato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.txtContato h1 {
+    color: var(--color-dark);
+    font-size: 6rem;
+    width: 70%;
+    align-self: center;
+}
+
+.icons {
+    display: flex;
+    gap: 3rem;
+    margin-left: 15%;
+}

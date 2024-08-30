@@ -1,0 +1,43 @@
+.forms-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 10rem;
+    gap: 3rem;
+    margin: 0 auto;
+    border-left: 2px solid #B9B7B7;
+    font-size: 3rem;
+    color: var(--color-dark);
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.forms-contato input, .forms-contato textarea {
+    border-radius: 3rem;
+    border-color: lightgray;
+    box-shadow: 3px 3px 10px #ccc ;
+    border: none;
+    padding: 1rem;
+    width: 100%
+}
+
+.forms-contato textarea {
+    height: 30vh;
+}
+
+.btnContato {
+    align-self: flex-end;
+    border-radius: 1rem;
+    background-color: #6975E8;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 200px;
+}

@@ -1,7 +1,14 @@
+import FormContato from '../components/FormContato';
+import TextoContato from '../components/TextContato';
+import './Contato.css'
+
 function Contato() {
     return ( 
         <>
-            <h1>Contato</h1>
+            <div className="container-sobre">
+                <TextoContato/>
+                <FormContato/>
+            </div>
         </>
      );
 }
