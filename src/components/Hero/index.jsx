@@ -1,17 +1,17 @@
-import InfoText from '../InfoText';
-import imgHero from '../../assets/heroImage.svg'
 import './Hero.css'
 
-function Hero() {
+function Hero({ titulo, texto, botao, imagens }) {
     return (
         <>
             <div className='hero'>
-                <InfoText
-                    titulo={"Crie seus vídeos online"}
-                    texto={"Transforme suas ideias em filmes memoráveis: onde a criatividade encontra a simplicidade."}
-                    botao={"Começar agora!"}
-                />
-                <img src={imgHero} alt="Homem fazendo parkour em um tunel" />
+                <div className='infoText'>
+                    <h1>{titulo}</h1>
+                    <p>{texto}</p>
+                    <button>{botao}</button>
+                </div>
+                <div className='hero-imagens'>
+                    {imagens.map((imagem, idx) => <img src={imagem} key={idx} />)}
+                </div>
             </div>
         </>
     );

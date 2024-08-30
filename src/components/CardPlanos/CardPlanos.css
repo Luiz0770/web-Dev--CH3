@@ -1,0 +1,54 @@
+
+.card-planos-header {
+    color: black;
+    padding: 3rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 2.5rem 2.5rem 0 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-planos-content {
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-light-700);
+    height: 350px;
+}
+
+.card-plano-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.card-plano-select label {
+    color: var(--color-dark);
+    font-size: 1.4rem;
+}
+
+.card-plano-select select {
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px #ccc;
+    padding: 1rem;
+}
+
+.card-planos-content button {
+    border-radius: .5rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid black;
+}
+
+.card-planos-content button:hover {
+    color: var(--color-light-700);
+    border: none;
+    background-color: #6975E8;
+    scale: 1.05;
+}

@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-dark: #000;
+  --color-dark: #333333;
   --color-light-700: #fff;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -25,4 +25,5 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto Mono", monospace;
+  max-width: 100%;
 }

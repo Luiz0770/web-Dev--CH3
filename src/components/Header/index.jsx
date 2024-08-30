@@ -6,14 +6,14 @@ function Header() {
         <>
             <header>
                 <nav className='cabecalho'>
-                    <li className='cabecalho-item'>
-                        <Link to='/'>Home</Link>
+                    <li>
+                        <Link className='cabecalho-item' to='/'>Home</Link>
                     </li>
-                    <li className='cabecalho-item'>
-                        <Link to='/sobre'>Sobre</Link>
+                    <li>
+                        <Link className='cabecalho-item' to='/sobre'>Sobre</Link>
                     </li>
-                    <li className='cabecalho-item'>
-                        <Link to='/contato'>Contato</Link>
+                    <li>
+                        <Link className='cabecalho-item' to='/contato'>Contato</Link>
                     </li>
                 </nav>
             </header>

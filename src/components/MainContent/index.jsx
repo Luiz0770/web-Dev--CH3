@@ -8,6 +8,9 @@ import lgTiktok from '../../assets/tiktok-logo.svg'
 import lgFacebook from '../../assets/facebook-logo.svg'
 import lgInstagram from '../../assets/instagram-logo.svg'
 
+// Imagens Hero
+import imgHero from '../../assets/heroImage.svg'
+
 function MainContent() {
 
     const plataformas = [
@@ -39,7 +42,13 @@ function MainContent() {
 
     return (
         <>
-            <Hero />
+            <Hero
+                titulo={"Crie seus vídeos online"}
+                texto={"Transforme suas ideias em filmes memoráveis: onde a criatividade encontra a simplicidade."}
+                botao={"Começar agora!"}
+                imagens={[imgHero]}
+            />
+
             <div className="cards">
                 {plataformas.map((plataforma, idx) => <Cards
                     key={plataforma.nome}

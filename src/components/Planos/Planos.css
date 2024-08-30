@@ -1,0 +1,23 @@
+.planos {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #F4F2F2;
+    padding: 3rem 0;
+}
+
+.planos h2 {
+    font-weight: 400;
+    font-size: 3.2rem;
+}
+
+.container-card-planos {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 1.2rem;
+    justify-content: center;
+    align-content: center;
+}
